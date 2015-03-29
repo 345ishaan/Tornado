@@ -1,0 +1,17 @@
+<table data-role="table" id="my-table" data-mode="reflow">
+    <thead>
+        <tr>
+            <th>Name/EmailID</th>
+            <th>Count</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for contact  in contacts_list %}
+        <tr>
+            <td>{{list(contact)[0].split()[0] }}</td>
+            <td>{{list(contact)[1]}}</td>
+        </tr>
+    </tbody>
+    {% end %}
+</table>

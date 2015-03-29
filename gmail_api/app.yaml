@@ -1,0 +1,13 @@
+application: ishaan345-zapstitch
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+
+- url: .*
+  script: gmail_api.app
+
+
+  
